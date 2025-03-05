@@ -1,0 +1,2 @@
+usando el comando chmod 640 dar ciertos permisos documento1.txt
+ 
