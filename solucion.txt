@@ -16,9 +16,10 @@
 - Otros usuarios solo pueden leerlo.  
 ✅ **Permiso esperado:** 604
 chmod 604 registro.log
-usario, leer y escribir es igual a 4+2 = 6 
-grupo es 0 sin permiso
-4 para otros usuarios
+el dueño, leer y escribir es igual a 4+2 = 6 
+los grupos no = 0 sin permiso
+4 solo para otros usuarios
+
 
 ## **Ejercicio 2**
 📁 **Archivo:** `ejecutable.sh`  
@@ -27,7 +28,8 @@ grupo es 0 sin permiso
 - Nadie más puede acceder.  
 ✅ **Permiso esperado:** `700
 chmod 700 ejecutable.sh
-usuario leer escribir y ejecutar 4+2+1 = 7
+solo el propietario leer, escribir y ejecutar 4+2+1 = 7
+y los demas no pueden acceder = 0
 
 
 ## **Ejercicio 3**
@@ -36,7 +38,7 @@ usuario leer escribir y ejecutar 4+2+1 = 7
 - Todos pueden leer y escribir en él.  
 ✅ **Permiso esperado:** `666
 chmod 666 publico.txt
-usuario grupo y otros usuarios leer y escribir 4+2=6
+el propietario, grupo y otros usuarios pueden leer y escribir 4+2=6
 
 
 ## **Ejercicio 4**
@@ -46,8 +48,8 @@ usuario grupo y otros usuarios leer y escribir 4+2=6
 - Nadie más debe tener acceso.  
 ✅ **Permiso esperado:** 600
 chmod 600 respaldo.db
-usuario puee leer y escrinbir 4+2=6
-grupos y otros =0
+el propietario puede leer y escribir 4+2=6
+los grupos y otros no pueden acceder =0
 
 
 ## **Ejercicio 5**
@@ -55,9 +57,10 @@ grupos y otros =0
 🔹 **Requisitos:**  
 - Todos pueden leerlo, pero solo el dueño puede modificarlo.  
 ✅ **Permiso esperado:** 644
-chmnod 644 instrucciones.txt
-usuario puede escrbir    4+2=6
-todos los demas solo leer=4
+chmod 644 instrucciones.txt
+el propietario puede leer y escribir 4+2=6
+todos los demas solo pueden leerlo =4
+
 
 ## **Ejercicio 6**
 📁 **Archivo:** `secreto.key`  
@@ -66,9 +69,8 @@ todos los demas solo leer=4
 - Nadie más debe tener acceso.  
 ✅ **Permiso esperado:**  400
 chmod 400 secreto.key
-usuario solo el dueño =4
-los demas =0
-
+el propietario, solo el dueño puede acceder a leer =4
+los demas  no pueden acceder =0
 
 
 ## **Ejercicio 7**
@@ -78,8 +80,8 @@ los demas =0
 - Nadie más puede leer ni modificarlo.  
 ✅ **Permiso esperado:** 100
 chmod 100 ejecutar_programa
-usuario ejecuta =1
-los demas no tienen permisos 
+el propietario solo lo ejecuta =1
+los demas no tienen permisos =0 
 
 
 ## **Ejercicio 8**
@@ -88,7 +90,7 @@ los demas no tienen permisos
 - Todos pueden leer y modificar el archivo.  
 ✅ **Permiso esperado:** 666
 chmod 666 compartido.doc
-todos pueden leer y modificar
+todos pueden leer y modificarlo =6
 ---
 
 ## **Ejercicio 9**
@@ -98,7 +100,8 @@ todos pueden leer y modificar
 - Todos los demás pueden ejecutarlo pero no modificarlo.  
 ✅ **Permiso esperado:** 111
 chmod 111 solo_ejecucion
-todos lo ejcutan 
+tanto el propietario, como grupos, como otros usuarios lo pueden ejecutar = 1 
+
 
 ## **Ejercicio 10**
 📁 **Archivo:** `reporte_admin.pdf`  
@@ -106,11 +109,11 @@ todos lo ejcutan
 - Solo el dueño puede leer y escribir.  
 - El grupo del dueño puede leerlo.  
 - Otros usuarios no pueden acceder.  
-✅ **Permiso esperado:** `_640
+✅ **Permiso esperado:** `640
 chmod 640 reporte_admin.pdf
-el dueño lee y escribe =6
-y escribe el grupo puede leer 4 
-otros usuarios sin permiso
+el dueño o pueden leer y escribir = 6
+el grupo solo lo pueden leer = 4 
+otros usuarios no tienen permiso para acceder = 0
 
 ---
 
