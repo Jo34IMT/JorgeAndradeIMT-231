@@ -1,0 +1,22 @@
+1.- ¿Qué número de permisos aplicarías y qué comando ejecutarías?
+- El propietario puede leer y escribir.= 6
+- El grupo puede leer.= 4
+- Otros usuarios **NO** pueden acceder.= 0
+los comandos que usaria chmod 640 documento1.txt
+
+2.- ¿Qué comando aplicarías para asignar estos permisos?
+usaria el chmod 711 script.sh
+- El propietario puede leer, escribir y ejecutar. = 7 
+- El grupo y otros usuarios pueden solo ejecutarlo. = 1
+ 
+3.- ¿Qué número de permisos es el adecuado?
+desde mi punto de vista seria el chmod 600
+- Solo el propietario puede leer y escribir. = 6
+- Nadie más debe poder acceder. = 0
+
+4.-¿Qué comando utilizarías para establecer estos permisos?
+Desde mi punto de vista chmod 400 secreto.key
+- Solo el propietario puede leerlo. = 4
+- Nadie más debe tener acceso. = 0
+
+enlace del repositorio: https://github.com/Jo34IMT/JorgeAndradeIMT-231.git 
