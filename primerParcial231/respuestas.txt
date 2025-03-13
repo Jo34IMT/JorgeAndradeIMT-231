@@ -1,0 +1,71 @@
+Archivo de Respuestas: respuestas.txt
+
+Datos del Estudiante
+- Nombre Completo: Jorge Luis Andrade Hinojosa  
+- URL de GitHub de la carpeta del examen: https://github.com/Jo34IMT/JorgeAndradeIMT-231.git
+
+---
+
+## Tarea 1: Navegación y Creación de Carpetas
+
+- Permiso octal usado para restaurar permiso minimo de la carpeta primerParcial: chmod 600 primerParcial231
+ 
+- Comandos usados y justificaciones : tar -xzvf primerParcial231.tar.gz usado este comando se descomprime, 
+usando el (pwd) nos ubicamos donde nos encontramos en este caso /home/jorge-andrade/Descargas/primerParcial231 
+chmod 600 primerParcial231 dandonos permiso  4 = lectura, 2 = escritura solo al propietario
+usando el mkdir Tarea1 se crea la carpeta Tarea1, cd adentramos a esta carpeta, 
+con el pwd vemos nuestra ubicacion /home/jorge-andrade/Descargas/primerParcial231/tarea1
+mkdir extraFolder se crea la carpeta extraFolder,
+dentro de la carpeta usamos touch notesExtra.txt
+date > fechaTarea1.txt
+
+---
+
+## Tarea 2: Permisos en Formato Octal
+- Permiso octal usado para esta tarea :600
+
+- Comandos usados y justificaciones :
+chmod 600 mainConfig.cfg 4 lectura + 2 escritura y los demas no pueden ni leer ni escribir  
+date > fechaTarea2.txt
+
+---
+## Tarea 3: Scripting Básico 
+- Permiso octal usado para el `basicScript.sh`: 554 
+
+- Comandos usados y justificaciones :
+chmod 554 basicScript.sh da los perimisos adecuados como 4 leer y 1 ejecutar al propietario, al grupo , solo los otros
+usuarios pueden leer
+usamos nano basicScript.sh
+pwd: Muestra la ubicación actual y la guarda en un archivo.
+date: Muestra la fecha y hora actuales, y las guarda en un archivo.
+ls -l: Muestra el contenido del directorio con detalles. 
+date > fechaTarea3.txt
+
+---
+## Tarea 4: Edición con nano o vim 
+
+- para que usamos el comando `cat` ?: muestre e inmprime datos de la terminal y se ve informacion dentro de un archivo
+
+- Comandos usados y justificaciones : chmod 700 infoDocument.txt.
+cat infoDocument.txt
+usamos date nos da la hora y fecha exacta dela ultima modificacion de archivos 
+date: Muestra la fecha y hora actual.
+whoami: Muestra el nombre de usuario actual.
+uname -r: Muestra la versión del kernel.
+cat /etc/os-release: Muestra la información de la distribución de Linux.
+cat infoDocument.txt: Muestra el contenido del archivo infoDocument.txt para verificar que se haya editado correctamente.
+---
+## Tarea 5: Final
+
+- para que usamos el comando `tree -p` y para que su argumento `-p` ?:usamos el tree -p para ver todos los archivos dentro
+de la carpeta y dentro de ella 
+el -p e usa para mostrar los permisos de los archivos y directorios en la estructura de árbol
+
+- Permiso octal para `entregaFinal.txt`: 555
+
+- Comandos usados y justificaciones :
+
+usamos mkdir tarea5 pa crear carpeta y
+usamos touch entregaFinal.txt pa crear archivos 
+"El comando tree -p se usa para visualizar la estructura de directorios junto con los permisos de cada archivo y carpeta. 
+El argumento -p muestra los permisos en formato similar a ls -l, lo que facilita la identificación de accesos y restricciones." > Tarea5/respuestas.txt
